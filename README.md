@@ -1,4 +1,4 @@
 # ESP32-Quadruped-Robot-IK-PCA9685-WiFi-Control
-ESP32-powered quadruped robot — Three-bar linkage legs, 12 DOF, C++ trot gait control using WiFi
-This was a walking quadruped built as an individual Summer project as a 1st year in kcl,  
+A four-legged walking robot built as an individual project during my first year of General Engineering at KCL. Each leg uses a three-bar linkage mechanism driven by 3 servos, giving 12 degrees of freedom total, all coordinated from a single ESP32 microcontroller running a trot gait.
+
 # Overview 
