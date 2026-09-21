@@ -27,7 +27,7 @@ Written in C++ Implements a trot gait with adjustable stride length, step height
 
 # tools and tech used
 
-ESP32 · C/C++ · PWM servo control · Fusion 360  · 3D printing (FDM)
+ESP32 · C++ · PWM servo control · Fusion 360  · 3D printing (FDM)
 
 # Demo
 
