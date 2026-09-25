@@ -6,7 +6,7 @@ Each leg has 3 degrees of freedom (hip, thigh, knee), driven directly by its own
 
 
 
-![Walking Demo](media/gait-demo.gif)
+![Walking Demo](media/gaitdemo.gif)
 ## Full Demo + Gallery 
 ![gallery](media/coverfoto.jpeg)
 ![gallery](media/sideprofile.jpeg)
