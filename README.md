@@ -2,7 +2,7 @@
 A four-legged walking robot built as an individual project during my first year of General Engineering at KCL. Each leg has 3 degrees of freedom — hip, thigh and knee — with each joint driven directly by its own servo, giving 12 degrees of freedom total, all coordinated from a single ESP32 microcontroller running a trot gait.
 
 # Overview 
-Goal wsa to design, build and program a quadruped form the ground up - covering mechanical leg design, electronics and gait control firmware,Each leg is a 3-DOF serial (open-chain) linkage where the servo horns directly actuate each joint in sequence, all while remaining lightweight and within a budget of £100
+Goal was to design, build and program a quadruped form the ground up - covering mechanical leg design, electronics and gait control firmware,Each leg is a 3-DOF serial (open-chain) linkage where the servo horns directly actuate each joint in sequence, all while remaining lightweight and within a budget of £100
 
 final weight-400g , final cost- £98
 
