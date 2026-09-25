@@ -1,50 +1,71 @@
-# ESP32-Quadruped-Robot-IK-PCA9685-WiFi-Control
-A four-legged walking robot built as an individual project during my first year of General Engineering at KCL. Each leg has 3 degrees of freedom — hip, thigh and knee — with each joint driven directly by its own servo, giving 12 degrees of freedom total, all coordinated from a single ESP32 microcontroller running a trot gait.
+# ESP32 Quadruped Robot — Inverse Kinematics, PCA9685 Control
 
-# Overview 
-Goal was to design, build and program a quadruped form the ground up - covering mechanical leg design, electronics and gait control firmware,Each leg is a 3-DOF serial (open-chain) linkage where the servo horns directly actuate each joint in sequence, all while remaining lightweight and within a budget of £100
+A four-legged walking robot built from scratch as a solo project in my first year of General Engineering at KCL — covering mechanical leg design, electronics, and gait control firmware, within a self-imposed £100 budget.
 
-final weight-400g , final cost- £98
+Each leg has 3 degrees of freedom (hip, thigh, knee), driven directly by its own servo — 12 DOF in total — all coordinated from a single ESP32 running a trot gait.
 
-#  How does ot work
+[![Quadruped Walking Demo](https://img.youtube.com/vi/x4xqgKQPE7Q/0.jpg)](https://www.youtube.com/watch?v=x4xqgKQPE7Q)
 
-**mechanically**
+---
 
-as previosuly mentioned the 3 DOF legs are serially linked with direct s ervos at hip, knee and thigh. Link lengths and joint ranges were modelled in Fusion and iterated for a stable foot trajectory and good ground clearance.
+## Specs
 
-**Electronics**
+| | |
+|---|---|
+| Degrees of freedom | 12 (3 per leg) |
+| Weight | 400 g |
+| Cost | £98 (budget: £100) |
+| Microcontroller | ESP32 |
+| Servo driver | PCA9685 (PWM) |
+| Firmware | C++ |
+| CAD | Fusion 360 |
+| Manufacturing | 3D printing (FDM) |
 
-all 12 motors were powered by an ESP32 via a PCA9685 servo driver via PWM, and a dedicated power supply.
+---
 
-**Firmware**
+## Overview
 
-Written in C++ Implements a trot gait with adjustable stride length, step height, speed, and phase offsets between legs, using inverse kinematics and interpolation to form smooth arcs. Servo calibration and gait parameters are tuned via bench testing.
+The goal was to design, build, and program a quadruped from the ground up — mechanical leg design, electronics, and gait control firmware — while staying lightweight and within budget. Each leg is a 3-DOF serial (open-chain) linkage, with servo horns directly actuating each joint in sequence.
 
+## How It Works
 
-**build**
+### Mechanical
+The 3-DOF legs are serially linked, with direct-drive servos at the hip, thigh, and knee. Link lengths and joint ranges were modelled in Fusion 360 and iterated for a stable foot trajectory and good ground clearance.
 
-3D-printed (FDM) chassis and leg links, assembled and iteratively tested to reduce foot slip., a multiude of m1.5-m2 screws to mount the servos and nano gel foot attachments to improve grip
+### Electronics
+All 12 servos are powered by an ESP32 via a PCA9685 servo driver over PWM, with a dedicated power supply.
 
-# tools and tech used
+### Firmware
+Written in C++. Implements a trot gait with adjustable stride length, step height, speed, and phase offsets between legs, using inverse kinematics and interpolation to produce smooth foot arcs. Servo calibration and gait parameters are tuned via bench testing.
 
-ESP32 · C++ · PWM servo control · Fusion 360  · 3D printing (FDM)
+### Build
+Chassis and leg links are 3D-printed (FDM), assembled and iteratively tested to reduce foot slip. Servos are mounted with M1.5–M2 screws, and nano gel foot attachments are used to improve grip.
 
-# Demo
+---
 
-[![Quadruped Walking Demo](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=x4xqgKQPE7Q)
+## Tools & Tech
 
-# Limitations and Future improvements
+`ESP32` · `C++` · `PWM Servo Control` · `Fusion 360` · `3D Printing (FDM)`
 
-Quadruped tends to oscillate side ways during its gait: redesigned leg linkage to a 4 bar linkage , reduce limb inertia due to less mass along leg thus improving leg stability , and a higher mechancial advanatage
+---
 
-Implementation of IMU auto levelling in order to further improve stability, more gaits(bound , crawl), 
+## Limitations & Future Improvements
 
-redesign of frame for cable management, and better ridgity
+- **Lateral oscillation during gait** — the quadruped tends to oscillate sideways while walking. Planned fix: redesign the leg linkage as a 4-bar linkage to reduce limb inertia and increase mechanical advantage, improving stability.
+- **IMU auto-levelling** — to further improve stability during walking.
+- **Additional gaits** — bound and crawl, alongside the current trot.
+- **Frame redesign** — for better cable management and rigidity.
+- **Basic object detection** — ultrasonic or LiDAR sensing.
 
-implement basic object detection (ultrasonic/ lidar)
+---
 
+## Repo Structure
 
+```
+├── firmware/        # ESP32 C++ source (gait control, IK, servo calibration)
+├── cad/              # Fusion 360 models / exports
+├── media/            # Photos and demo assets
+└── README.md
+```
 
-
-
-
+*(Update the tree above to match your actual folder layout.)*
