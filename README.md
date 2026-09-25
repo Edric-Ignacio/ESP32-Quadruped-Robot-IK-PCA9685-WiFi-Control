@@ -4,8 +4,12 @@ A four-legged walking robot built from scratch as a solo project in my first yea
 
 Each leg has 3 degrees of freedom (hip, thigh, knee), driven directly by its own servo — 12 DOF in total — all coordinated from a single ESP32 running a trot gait.
 
-video demo below,
 
+
+![Walking Demo](media/gait-demo.gif)
+## Full Demo + Gallery 
+![gallery](media/coverfoto.jpeg)
+![gallery](media/sideprofile.jpeg)
 
 [![Quadruped Walking Demo](https://img.youtube.com/vi/x4xqgKQPE7Q/0.jpg)](https://www.youtube.com/watch?v=x4xqgKQPE7Q)
 
