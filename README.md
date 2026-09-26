@@ -45,7 +45,7 @@ The 3-DOF legs are serially linked, with direct-drive servos at the hip, thigh, 
 All 12 servos are powered by an ESP32 via a PCA9685 servo driver over PWM, with a dedicated power supply.
 
 ### Firmware
-Written in C++. Implements a trot gait with adjustable stride length, step height, speed, and phase offsets between legs, using inverse kinematics and interpolation to produce smooth foot arcs. Servo calibration and gait parameters are tuned via bench testing.
+Written in C++. Implements a trot gait with adjustable stride length(5-50mm), step height(1-20mm), speed(2-40ms between steps), pitch+roll(±15°), and phase offsets between legs, using inverse kinematics and interpolation to produce smooth foot arcs. Servo calibration and gait parameters are tuned via bench testing.
 
 ### Build
 Chassis and leg links are 3D-printed (FDM), assembled and iteratively tested to reduce foot slip. Servos are mounted with M1.5–M2 screws, and nano gel foot attachments are used to improve grip.
