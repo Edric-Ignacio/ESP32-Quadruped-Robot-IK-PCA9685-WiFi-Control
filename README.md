@@ -2,7 +2,7 @@
 
 A four-legged walking robot built from scratch as a solo project in my first year of General Engineering at KCL — covering mechanical leg design, electronics, and gait control firmware, within a self-imposed £100 budget.
 
-Each leg has 3 degrees of freedom (hip, thigh, knee), driven directly by its own servo — 12 DOF in total — all coordinated from a single ESP32 running a trot gait.
+Each leg has 3 degrees of freedom (hip, thigh, knee), driven directly by its own servo — 12 DOF in total — all coordinated from a single ESP32 running a trot gait controlled via  WiFi control (ESP32).
 
 
 
