@@ -11,6 +11,8 @@ Each leg has 3 degrees of freedom (hip, thigh, knee), driven directly by its own
 ![gallery](media/coverfoto.jpeg)
 ![gallery](media/sideprofile.jpeg)
 
+click for a full demo video below
+
 [![Quadruped Walking Demo](https://img.youtube.com/vi/x4xqgKQPE7Q/0.jpg)](https://www.youtube.com/watch?v=x4xqgKQPE7Q)
 
 ---
