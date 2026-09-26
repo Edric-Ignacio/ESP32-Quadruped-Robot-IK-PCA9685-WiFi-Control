@@ -60,7 +60,7 @@ Chassis and leg links are 3D-printed (FDM), assembled and iteratively tested to 
 
 ## Limitations & Future Improvements
 
-- **Lateral oscillation during gait** — the quadruped tends to oscillate sideways while walking. Planned fix: redesign the leg linkage as a 4-bar linkage to reduce limb inertia and increase mechanical advantage, improving stability.
+- **Lateral oscillation during gait** — the quadruped oscillate sideways while walking longer strides. Planned fix: redesign the leg linkage as a 4-bar linkage to reduce limb inertia and increase mechanical advantage, improving stability.
 - **IMU auto-levelling** — to further improve stability during walking.
 - **Additional gaits** — bound and crawl, alongside the current trot.
 - **Frame redesign** — for better cable management and rigidity.
